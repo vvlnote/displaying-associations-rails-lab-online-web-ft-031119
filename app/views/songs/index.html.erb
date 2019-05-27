@@ -4,6 +4,6 @@
     str1 = <%= s.artist.name %>
     str2 = <%= s.title %>
     str = str1 + " - " + str2
-    <li> <%= link_to (s.artist.name, " - ", s.title) ,song_path(s) %> </li>
+    <li> <%= link_to "#{str}",song_path(s) %> </li>
   <%end%>
 </ul>
