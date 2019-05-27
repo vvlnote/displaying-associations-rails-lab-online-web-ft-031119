@@ -1,0 +1,9 @@
+<h1>Artist Name - Song Title</h1>
+<ul>
+  <%=@songs.each do |s| %>
+    str1 = <%= s.artist.name %>
+    str2 = <%= s.title %>
+    str = str1 + " - " + str2
+    <li> <%= link_to (s.artist.name, " - ", s.title) ,song_path(s) %> </li>
+  <%end%>
+</ul>
